@@ -1,0 +1,296 @@
+<?xml version="1.0" ?>
+<robot name="dog3" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find dog3_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find dog3_description)/urdf/dog3.trans" />
+<xacro:include filename="$(find dog3_description)/urdf/dog3.gazebo" />
+
+<link name="base_footprint"/>
+
+<joint name="base_joint" type="fixed">
+  <parent link="base_footprint"/>
+  <child link="base_link"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.00011132532547241413 -4.662732972956323e-18 0.055032006031076684" rpy="0 0 0"/>
+    <mass value="0.3291572385001325"/>
+    <inertia ixx="0.000113" iyy="0.000289" izz="0.00038" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frontleft_leg1_1">
+  <inertial>
+    <origin xyz="-4.4959534238817045e-06 -0.0026529909027981774 -0.010990291442556657" rpy="0 0 0"/>
+    <mass value="0.014553831322697403"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04 0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontleft_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04 0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontleft_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frontright_leg1_1">
+  <inertial>
+    <origin xyz="-4.423121798220742e-06 0.0026529909027981705 -0.010989709317061773" rpy="0 0 0"/>
+    <mass value="0.014553831322697407"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04 -0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontright_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04 -0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontright_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rareleft_leg1_1">
+  <inertial>
+    <origin xyz="4.178672045329623e-06 -0.002652427713442977 -0.011037639322699376" rpy="0 0 0"/>
+    <mass value="0.014607604765158601"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareleft_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareleft_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rareright_leg1_1">
+  <inertial>
+    <origin xyz="4.1786720198153104e-06 0.002652427713442977 -0.011037639322699376" rpy="0 0 0"/>
+    <mass value="0.014607604765158596"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04 -0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareright_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04 -0.035 -0.055" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareright_leg1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="-1.8011286906371993e-13 0.0 0.0024530306087636317" rpy="0 0 0"/>
+    <mass value="0.0019329452635162968"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04 -0.0 -0.068" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04 -0.0 -0.068" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rareright_leg2_1">
+  <inertial>
+    <origin xyz="-4.903097504740939e-07 0.0014999999999999944 -0.01071668409042427" rpy="0 0 0"/>
+    <mass value="0.00641846357082693"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04001 -0.0425 -0.029882" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareright_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04001 -0.0425 -0.029882" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareright_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rareleft_leg2_1">
+  <inertial>
+    <origin xyz="-4.903097504740939e-07 -0.0014999999999999944 -0.010716684090424259" rpy="0 0 0"/>
+    <mass value="0.00641846357082693"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.04001 0.0425 -0.029882" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareleft_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.04001 0.0425 -0.029882" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/rareleft_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frontleft_leg2_1">
+  <inertial>
+    <origin xyz="2.128994332217804e-07 -0.0015000000000001262 -0.010295486686045224" rpy="0 0 0"/>
+    <mass value="0.006007661790889966"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.040002 0.0425 -0.029986" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontleft_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.040002 0.0425 -0.029986" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontleft_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frontright_leg2_1">
+  <inertial>
+    <origin xyz="-1.90492945723042e-09 0.0014999999999998695 -0.01029521805591158" rpy="0 0 0"/>
+    <mass value="0.006007661790889966"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04 -0.0425 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontright_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04 -0.0425 -0.03" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://dog3_description/meshes/frontright_leg2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="revolute">
+  <origin xyz="-0.04 -0.035 0.055" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="frontleft_leg1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="-0.04 0.035 0.055" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="frontright_leg1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.04 -0.035 0.055" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rareleft_leg1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 4" type="revolute">
+  <origin xyz="0.04 0.035 0.055" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="rareright_leg1_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.04 0.0 0.068" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="camera_1"/>
+</joint>
+
+<joint name="Revolute 6" type="revolute">
+  <origin xyz="1e-05 0.0075 -0.025118" rpy="0 0 0"/>
+  <parent link="rareright_leg1_1"/>
+  <child link="rareright_leg2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 7" type="revolute">
+  <origin xyz="1e-05 -0.0075 -0.025118" rpy="0 0 0"/>
+  <parent link="rareleft_leg1_1"/>
+  <child link="rareleft_leg2_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 8" type="revolute">
+  <origin xyz="-2e-06 -0.0075 -0.025014" rpy="0 0 0"/>
+  <parent link="frontleft_leg1_1"/>
+  <child link="frontleft_leg2_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 9" type="revolute">
+  <origin xyz="0.0 0.0075 -0.025" rpy="0 0 0"/>
+  <parent link="frontright_leg1_1"/>
+  <child link="frontright_leg2_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit upper="1.570796" lower="-1.570796" effort="100" velocity="100"/>
+</joint>
+
+</robot>

@@ -1,0 +1,43 @@
+[0.010s] Invoking command in '/home/nagendra/robotdog_ws/build/dog3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nagendra/robotdog_ws/build/dog3_description -- -j12 -l12
+[0.037s] Invoked command in '/home/nagendra/robotdog_ws/build/dog3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/nagendra/robotdog_ws/build/dog3_description -- -j12 -l12
+[0.044s] Invoking command in '/home/nagendra/robotdog_ws/build/dog3_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nagendra/robotdog_ws/build/dog3_description
+[0.050s] -- Install configuration: ""
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/urdf
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/urdf/dog3.trans
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/urdf/materials.xacro
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/urdf/dog3.gazebo
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/urdf/dog3.xacro
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/camera_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/rareleft_leg1_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/frontright_leg1_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/base_link.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/rareright_leg2_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/rareleft_leg2_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/frontleft_leg2_1.stl
+[0.050s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/frontright_leg2_1.stl
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/rareright_leg1_1.stl
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/meshes/frontleft_leg1_1.stl
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/spawn_robot.launch.py
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/controller.launch
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/controller.yaml
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/urdf.rviz
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/gazebo.launch
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/launch/display.launch
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/ament_index/resource_index/package_run_dependencies/dog3_description
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/ament_index/resource_index/parent_prefix_path/dog3_description
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/environment/ament_prefix_path.sh
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/environment/ament_prefix_path.dsv
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/environment/path.sh
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/environment/path.dsv
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/local_setup.bash
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/local_setup.sh
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/local_setup.zsh
+[0.051s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/local_setup.dsv
+[0.051s] -- Installing: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/package.dsv
+[0.052s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/ament_index/resource_index/packages/dog3_description
+[0.052s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/cmake/dog3_descriptionConfig.cmake
+[0.052s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/cmake/dog3_descriptionConfig-version.cmake
+[0.052s] -- Up-to-date: /home/nagendra/robotdog_ws/install/dog3_description/share/dog3_description/package.xml
+[0.052s] Invoked command in '/home/nagendra/robotdog_ws/build/dog3_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/nagendra/robotdog_ws/build/dog3_description
